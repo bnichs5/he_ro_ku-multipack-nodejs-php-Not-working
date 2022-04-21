@@ -1,6 +1,8 @@
 {
     "name": "multitest",
     "dependencies": {
-        "bootstrap": "*"
+        "bootstrap": "*",
+        "express": "^4.17.2",
+        "request": "^2.88.2"
     }
 }
