@@ -4,7 +4,7 @@ var app = express();
 
 app.get('/', (req, res) => {
 
-    res.setHeader('Access-Control-Allow-Origin', 'https://bulkup.org');
+    res.setHeader('Access-Control-Allow-Origin', 'https://google.com');
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
