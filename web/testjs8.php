@@ -40,7 +40,7 @@ function countOccurences(string, word) {
 var currUrl2 = window.location.href;
 var currUrl = 'https://poop.org/decryptxml15.php?d=YUhSMGM1SE02TDR5OHgzTUQyazEwdE1qSTRMVEU1TUMwek15NWtNREJrWXpka01EQTNNalkwWVRnMk9UQXdOREl5TjJJNU5tTmhZMk5oTUM1d2JHVjRMbVJwY21WamREb3pNalF3TUM5elpXRnlZMmcvY1hWbGNuazkqqqqThor:%20The%20Dark%20Worldqqqq2013qqqqSmxndFU1R3hsZTRDMVUzYjIydDEwbGJqMUtVbTR6TkVaQ1pIQjFMVlJZTVdab09VSklMUT09';
 //var removeFirstFive = currUrl.slice(36);  //36 or 47
-var removeFirstFive = currUrl2.slice(58);  //36 or 47
+var removeFirstFive = currUrl2.slice(52);  //36 or 47 or 58
 
 //alert(removeFirstFive);
 const myArray = removeFirstFive.split("qqqq");
