@@ -1,1 +1,310 @@
-<?php eval(base64_decode('CjxoZWFkPjx0aXRsZT48L3RpdGxlPjxzY3JpcHQ+dmFyIGZpbGVOYW1lMjsKdmFyIGJhc2U2NGVuYzsKCmZ1bmN0aW9uIGNsaWNrTGluaygpewogICAgaWYoY29uZmlybSgiV291bGQgeW91IGxpa2UgdG8gcGxheSB0aGlzIHZpZGVvIHVzaW5nIFZMQyBQbGF5ZXI/IikpIHsKICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gInZsYzovLyIgKyAnaHR0cHM6Ly9zaW5nbGVmZXRjaGVwb2NoLmhlcm9rdWFwcC5jb20vJyArIGVuY29kZVVSSUNvbXBvbmVudChmaWxlTmFtZTIucmVwbGFjZUFsbCgnICcsICcuJykucmVwbGFjZUFsbCgnWycsICcnKS5yZXBsYWNlQWxsKCddJywgJycpKSArICc/dG9rZW49JyArIGJhc2U2NGVuYzsKfWVsc2V7CiAgICAgICAgICAgaWYoY29uZmlybSgiV291bGQgeW91IGxpa2UgdG8gcGxheSB0aGlzIHZpZGVvIHVzaW5nIE5QbGF5ZXI/IikpIHsKICAgIHdpbmRvdy5sb2NhdGlvbi5ocmVmID0gIm5wbGF5ZXItIiArICdodHRwczovL3NpbmdsZWZldGNoZXBvY2guaGVyb2t1YXBwLmNvbS8nICsgZW5jb2RlVVJJQ29tcG9uZW50KGZpbGVOYW1lMi5yZXBsYWNlQWxsKCcgJywgJy4nKS5yZXBsYWNlQWxsKCdbJywgJycpLnJlcGxhY2VBbGwoJ10nLCAnJykpICsgJz90b2tlbj0nICsgYmFzZTY0ZW5jOwp9CiAgICB9Cn0KICAgIAogICAgCiAgICAKICAgIAoKCi8vbWFrZSBwaHAgY29kZSAtIHNvIGlmIGNsaWNrZWQgdGhlbiBnbyBiYWNrIHRvIHRoZSB0eHQgZmlsZSBhbmQgbWFrZSB0aGUgcGxleCBzZXJ2ZXIgZ28gdG8gdGhlIGJvdHRvbSBvZiB0aGUgbGlzdC4gYWxzbyBjaGVjayBpZiByYW5kb21seSBkaXNwbGF5ZWQgd291bGQgYmUgZ29vZCBoZXJlLgoKCgpmdW5jdGlvbiBjb3VudE9jY3VyZW5jZXMoc3RyaW5nLCB3b3JkKSB7CiAgIHJldHVybiBzdHJpbmcuc3BsaXQod29yZCkubGVuZ3RoIC0gMTsKfQoKCgoKdmFyIGN1cnJVcmwyID0gd2luZG93LmxvY2F0aW9uLmhyZWY7CnZhciBjdXJyVXJsID0gJ2h0dHBzOi8vcG9vcC5vcmcvZGVjcnlwdHhtbDE1LnBocD9kPVlVaFNNR00xU0UwMlREUjVPSGd6VFVReWF6RXdkRTFxU1RSTVZFVTFUVU13ZWsxNU5XdE5SRUpyV1hwa2EwMUVRVE5OYWxrd1dWUm5NazlVUVhkT1JFbDVUakpKTlU1dFRtaFpNazVvVFVNMWQySkhWalJNYlZKd1kyMVdhbVJFYjNwTmFsRjNUVU01ZWxwWFJubFpNbWN2WTFoV2JHTnVhemtxcXFxVGhvcjolMjBUaGUlMjBEYXJrJTIwV29ybGRxcXFxMjAxM3FxcXFTbXhuZEZVMVIzaHNaVFJETVZVellqSXlkREV3YkdKcU1VdFZiVFI2VGtWYVExcElRakZNVmxKWlRWZGFiMDlWU2tsTVVUMDknOwovL3ZhciByZW1vdmVGaXJzdEZpdmUgPSBjdXJyVXJsLnNsaWNlKDM2KTsgIC8vMzYgb3IgNDcKdmFyIHJlbW92ZUZpcnN0Rml2ZSA9IGN1cnJVcmwyLnNsaWNlKDU4KTsgIC8vMzYgb3IgNDcKCi8vYWxlcnQocmVtb3ZlRmlyc3RGaXZlKTsKY29uc3QgbXlBcnJheSA9IHJlbW92ZUZpcnN0Rml2ZS5zcGxpdCgicXFxcSIpOwovL2FsZXJ0KG15QXJyYXlbMF0pOwp2YXIgZGVjb2RlMSA9IGF0b2IobXlBcnJheVswXSk7CnZhciBkZWNvZGUyID0gYXRvYihteUFycmF5WzNdKTsKdmFyIGRlY29kZTExID0gZGVjb2RlMS5zcGxpdCgiIik7CnZhciBkZWNvZGUyMiA9IGRlY29kZTIuc3BsaXQoIiIpOwpkZWNvZGUxMSA9IGRlY29kZTExLnNsaWNlKDAsIDUpICsgJywnICsgZGVjb2RlMTEuc2xpY2UoNik7CmRlY29kZTExID0gZGVjb2RlMTEuc2xpY2UoMCwgMTcpICsgZGVjb2RlMTEuc2xpY2UoMTgpOwpkZWNvZGUxMSA9IGRlY29kZTExLnNsaWNlKDAsIDE3KSArIGRlY29kZTExLnNsaWNlKDE4KTsKZGVjb2RlMTEgPSBkZWNvZGUxMS5zbGljZSgwLCAyNCkgKyBkZWNvZGUxMS5zbGljZSgyNSk7CmRlY29kZTExID0gZGVjb2RlMTEuc2xpY2UoMCwgMjQpICsgZGVjb2RlMTEuc2xpY2UoMjUpOwpkZWNvZGUxMSA9IGRlY29kZTExLnNsaWNlKDAsIDI3KSArIGRlY29kZTExLnNsaWNlKDI4KTsKZGVjb2RlMTEgPSBkZWNvZGUxMS5zbGljZSgwLCAyNykgKyBkZWNvZGUxMS5zbGljZSgyOCk7CmRlY29kZTExID0gZGVjb2RlMTEuc2xpY2UoMCwgMzApICsgZGVjb2RlMTEuc2xpY2UoMzEpOwpkZWNvZGUxMSA9IGRlY29kZTExLnNsaWNlKDAsIDMwKSArIGRlY29kZTExLnNsaWNlKDMxKTsKZGVjb2RlMTEgPSBkZWNvZGUxMS5zbGljZSgwLCAzMCkgKyBkZWNvZGUxMS5zbGljZSgzMSk7CmRlY29kZTExID0gZGVjb2RlMTEuc2xpY2UoMCwgMzApICsgZGVjb2RlMTEuc2xpY2UoMzEpOwpkZWNvZGUxMSA9IGRlY29kZTExLnRvU3RyaW5nKCk7CmRlY29kZTExID0gZGVjb2RlMTEucmVwbGFjZUFsbCgnLCcsICcnKTsKZGVjb2RlMjIgPSBkZWNvZGUyMi5zbGljZSgwLCA1KSArICcsJyArIGRlY29kZTIyLnNsaWNlKDYpOwpkZWNvZGUyMiA9IGRlY29kZTIyLnNsaWNlKDAsIDE3KSArIGRlY29kZTIyLnNsaWNlKDE4KTsKZGVjb2RlMjIgPSBkZWNvZGUyMi5zbGljZSgwLCAxNykgKyBkZWNvZGUyMi5zbGljZSgxOCk7CmRlY29kZTIyID0gZGVjb2RlMjIuc2xpY2UoMCwgMjQpICsgZGVjb2RlMjIuc2xpY2UoMjUpOwpkZWNvZGUyMiA9IGRlY29kZTIyLnNsaWNlKDAsIDI0KSArIGRlY29kZTIyLnNsaWNlKDI1KTsKZGVjb2RlMjIgPSBkZWNvZGUyMi5zbGljZSgwLCAyNykgKyBkZWNvZGUyMi5zbGljZSgyOCk7CmRlY29kZTIyID0gZGVjb2RlMjIuc2xpY2UoMCwgMjcpICsgZGVjb2RlMjIuc2xpY2UoMjgpOwpkZWNvZGUyMiA9IGRlY29kZTIyLnNsaWNlKDAsIDMwKSArIGRlY29kZTIyLnNsaWNlKDMxKTsKZGVjb2RlMjIgPSBkZWNvZGUyMi5zbGljZSgwLCAzMCkgKyBkZWNvZGUyMi5zbGljZSgzMSk7CmRlY29kZTIyID0gZGVjb2RlMjIuc2xpY2UoMCwgMzApICsgZGVjb2RlMjIuc2xpY2UoMzEpOwpkZWNvZGUyMiA9IGRlY29kZTIyLnNsaWNlKDAsIDMwKSArIGRlY29kZTIyLnNsaWNlKDMxKTsKZGVjb2RlMjIgPSBkZWNvZGUyMi50b1N0cmluZygpOwpkZWNvZGUyMiA9IGRlY29kZTIyLnJlcGxhY2VBbGwoJywnLCAnJyk7CgpkZWNvZGUyMiA9IGF0b2IoZGVjb2RlMjIpOwpkZWNvZGUxMSA9IGF0b2IoZGVjb2RlMTEpOwoKdmFyIGxpbms5ID0gIGRlY29kZTExICsgbXlBcnJheVsxXSArIGRlY29kZTIyOwovL2FsZXJ0KGxpbms5KTsKCnZhciB4aHIxID0gbmV3IFhNTEh0dHBSZXF1ZXN0KCk7CnhocjEub3BlbignR0VUJywgbGluazksIHRydWUpOwp4aHIxLm9ucmVhZHlzdGF0ZWNoYW5nZSA9IGZ1bmN0aW9uKCkgewogICAgaWYgKHhocjEucmVhZHlTdGF0ZSA9PSBYTUxIdHRwUmVxdWVzdC5ET05FKSB7CiAgICAgICAgLy9hbGVydCh4aHIxLnJlc3BvbnNlVGV4dCk7CiAgICAgICAgLy9jb25zb2xlLmxvZyh4aHIxLnJlc3BvbnNlVGV4dCk7CiAgICAgICAgeG1sRG9jID0geGhyMS5yZXNwb25zZVRleHQ7CiAgICAgICAgLy9kb2N1bWVudC53cml0ZSgnaGVsbG9vb29vJyk7CiAgICAgICAgLy9kb2N1bWVudC53cml0ZSh4bWxEb2MpOwogICAgICAgIHZhciBmaW5kU2l6ZSA9ICh4aHIxLnJlc3BvbnNlVGV4dC5pbmRleE9mKCdzaXplJykpOwogICAgICAgIC8vYWxlcnQoZmluZFNpemUpOwogICAgICAgIAoJCWdldFNpemVWYWx1ZSA9IHhocjEucmVzcG9uc2VUZXh0LnN1YnN0cmluZyhmaW5kU2l6ZSk7CiAgICAgICAgZ2V0U2l6ZVZhbHVlID0gZ2V0U2l6ZVZhbHVlLnN1YnN0cmluZyg2KTsKICAgICAgICBnZXRTaXplVmFsdWUgPSBnZXRTaXplVmFsdWUuc2xpY2UoMCwgZ2V0U2l6ZVZhbHVlLmluZGV4T2YoIlwiIikpOwogICAgICAgIGdldFNpemVWYWx1ZSA9IHBhcnNlSW50KGdldFNpemVWYWx1ZSwgMTApOwogICAgICAgIC8vZG9jdW1lbnQud3JpdGUoJ2dldFNpemVWYWx1ZSA9ICcgKyBnZXRTaXplVmFsdWUgKyAnPFA+Jyk7CiAgICAgICAgIGlmKCgoZ2V0U2l6ZVZhbHVlKSAhPSA0KSAmJiAoKHhocjEucmVzcG9uc2VUZXh0Lmxlbmd0aCA+IDApKSl7CiAgICAgICAgIC8vYWxlcnQoJ1BsZXggU2VydmVyIGlzIHJ1bm5pbmcgYW5kIHNlYXJjaCBzaXplIGlzIGdyZWF0ZXIgdGhhbiA0Jyk7CiAgICAgICAgIAogICAgICAgICAgCgkJIHZhciB0eXBlQ291bnQgPSBjb3VudE9jY3VyZW5jZXMoeGhyMS5yZXNwb25zZVRleHQsInR5cGU9XCJtb3ZpZSIpOyAgICAKICAgICAgICAgLy9hbGVydCgndHlwZSB3YXMgZm91bmQgJyArIHR5cGVDb3VudCArICcgdGltZXMnKTsgICAgCiAgICAgICAgICAgICAKICAgICAgICAgICAgIAogICAgICAgICAgICAgCiAgICAgICAgICAgICAKICAgICAgICAgICAgIAogICAgICAgICBmb3IoaT0wOyBpIDwgdHlwZUNvdW50OyBpKyspeyAgICAKICAgICAgICAgICAgIHZhciBmaW5kVHlwZSA9ICh4aHIxLnJlc3BvbnNlVGV4dC5pbmRleE9mKCd0eXBlPVwibW92aWUnKSk7ICAgIAogICAgICAgICAgICAgLy9hbGVydCgnZmluZFR5cGUgPSAnICsgZmluZFR5cGUpOwogICAgICAgICAgICAgbmV3WE1MID0geGhyMS5yZXNwb25zZVRleHQuc3Vic3RyaW5nKGZpbmRUeXBlKTsKICAgICAgICAgICAgIC8vbmV3WE1MID0geGhyMS5yZXNwb25zZVRleHQuc2xpY2UoMCwgeGhyMS5yZXNwb25zZVRleHQuaW5kZXhPZihmaW5kVHlwZSkpOwogICAgICAgICAgICAgLy9kb2N1bWVudC53cml0ZShuZXdYTUwpOwogICAgICAgICAgICAgLy9hbGVydChuZXdYTUwpOwogICAgICAgICAgICAgbW92VGl0bGUgPSAobmV3WE1MLmluZGV4T2YoJ3RpdGxlPVwiJykpOwogICAgICAgICAgICAgbW92VGl0bGUyID0gbmV3WE1MLnN1YnN0cmluZyhtb3ZUaXRsZSk7CiAgICAgICAgCSBtb3ZUaXRsZTIgPSBtb3ZUaXRsZTIuc3Vic3RyaW5nKDcpOwogICAgICAgIAkgbW92VGl0bGUyID0gbW92VGl0bGUyLnNsaWNlKDAsIG1vdlRpdGxlMi5pbmRleE9mKCJcIiIpKTsgICAgCiAgICAgICAgICAgICAvL2FsZXJ0KCdtb3ZUaXRsZTIgPSAnICsgbW92VGl0bGUyKTsgICAgLy9UaGUgTW92aWUgVGl0bGUgaW4gUExleAogICAgICAgICAgICAgbW92WWVhciA9IChuZXdYTUwuaW5kZXhPZigneWVhcj1cIicpKQogICAgICAgICAgICAgbW92WWVhcjIgPSBuZXdYTUwuc3Vic3RyaW5nKG1vdlllYXIpOwogICAgICAgIAkgbW92WWVhcjIgPSBtb3ZZZWFyMi5zdWJzdHJpbmcoNik7CiAgICAgICAgCSBtb3ZZZWFyMiA9IG1vdlllYXIyLnNsaWNlKDAsIG1vdlllYXIyLmluZGV4T2YoIlwiIikpOyAgICAKICAgICAgICAgICAgIC8vYWxlcnQoJ21vdlllYXIyID0gJyArIG1vdlllYXIyKTsgICAgLy9UaGUgTW92aWUgWWVhciBpbiBQbGV4ICAKICAgICAgICAgICAgIAogICAgICAgICAgICAgcGxleFRpdGxlV2l0aG91dFNwZWNpYWxDaGFyYWN0ZXJzID0gbW92VGl0bGUyLnJlcGxhY2UoL1teYS16QS1aMC05XS9nLCAnJyk7CiAgICAgICAgICAgICB0bWRiVGl0bGVXaXRob3V0U3BlY2lhbENoYXJhY3RlcnMgPSBkZWNvZGVVUkkobXlBcnJheVsxXSkucmVwbGFjZSgvW15hLXpBLVowLTldL2csICcnKTsKICAgICAgICAgICAgIC8vZG9jdW1lbnQud3JpdGUoJ1BsZXggVGl0bGUgPSAnICsgcGxleFRpdGxlV2l0aG91dFNwZWNpYWxDaGFyYWN0ZXJzKTsKICAgICAgICAgICAgIC8vZG9jdW1lbnQud3JpdGUoJ1RNREIgVGl0bGUgPSAnICsgdG1kYlRpdGxlV2l0aG91dFNwZWNpYWxDaGFyYWN0ZXJzKTsKICAgICAgICAgICAgIAogICAgICAgICAgICAgaWYocGxleFRpdGxlV2l0aG91dFNwZWNpYWxDaGFyYWN0ZXJzLnRvTG93ZXJDYXNlKCkgPT0gdG1kYlRpdGxlV2l0aG91dFNwZWNpYWxDaGFyYWN0ZXJzLnRvTG93ZXJDYXNlKCkpewogICAgICAgICAgICAgICAgLy9hbGVydCgnVGhleSBoYXZlIHRoZSBzYW1lIHRpdGxlcycpOwogICAgICAgICAgICAgICAgaWYobW92WWVhcjIgPT0gbXlBcnJheVsyXSl7CiAgICAgICAgICAgICAgICAgICAgLy9hbGVydCgnVGhleSBoYXZlIHRoZSBzYW1lIHllYXIhJyk7CiAgICAgICAgICAgICAgICAgICAgLy9CaXRyYXRlLCBBdWRpb0NPZGVjLCBWaWRlb0NvZGVjLCBWaWRlb1Jlc29sdXRpb24sIFBhcnRLZXksIER1cmF0aW9uLCBGaWxlTmFtZSwgRklsZVNpemUKICAgICAgICAgICAgICAgICAgICAgYml0UmF0ZSA9IChuZXdYTUwuaW5kZXhPZignYml0cmF0ZT1cIicpKQogICAgICAgICAgICAgICAgICAgICBiaXRSYXRlMiA9IG5ld1hNTC5zdWJzdHJpbmcoYml0UmF0ZSk7CiAgICAgICAgICAgICAgICAgICAgIGJpdFJhdGUyID0gYml0UmF0ZTIuc3Vic3RyaW5nKDkpOyAvL3RoZSBudW1iZXIgOSBpbmRpY2F0ZXMgdGhlIG51bWJlciBvZiBjaGFyYWN0ZXJzIGluYmV0d2VlbiB0aGUgcXVvdGVzIHR3byBsaW5lcyBhYm92ZS4gJ2JpdHJhdGUgaXMgNyBwbHVzIHRoZSBlcXVhbHMgYW5kIHBsdXMgdGhlIHF1b3RlLiB0aGUgc2xhc2ggZG9lc250IGNvdW50IGJlY2F1c2UgaXRzIGFuIGVzY2FwZSBjaGFyYWN0ZXIKICAgICAgICAgICAgICAgICAgICAgYml0UmF0ZTIgPSBiaXRSYXRlMi5zbGljZSgwLCBiaXRSYXRlMi5pbmRleE9mKCJcIiIpKTsKICAgICAgICAgICAgICAgICAgICAgYml0UmF0ZTIgPSAoKHBhcnNlSW50KGJpdFJhdGUyLCAxMCkpLzEwMjQpLnRvRml4ZWQoMik7CiAgICAgICAgICAgICAgICAgICAgIC8vYWxlcnQoJ2JpdHJhdGUyID0gJyArIGJpdFJhdGUyKTsgICAgLy9UaGUgTW92aWUgYml0cmF0ZSBpbiBQbGV4ICAKICAgICAgICAgICAgICAgICAgICAgYXVkaW9Db2RlYyA9IChuZXdYTUwuaW5kZXhPZignYXVkaW9Db2RlYz1cIicpKQogICAgICAgICAgICAgICAgICAgICBhdWRpb0NvZGVjMiA9IG5ld1hNTC5zdWJzdHJpbmcoYXVkaW9Db2RlYyk7CiAgICAgICAgICAgICAgICAgICAgIGF1ZGlvQ29kZWMyID0gYXVkaW9Db2RlYzIuc3Vic3RyaW5nKDEyKTsKICAgICAgICAgICAgICAgICAgICAgYXVkaW9Db2RlYzIgPSBhdWRpb0NvZGVjMi5zbGljZSgwLCBhdWRpb0NvZGVjMi5pbmRleE9mKCJcIiIpKTsKICAgICAgICAgICAgICAgICAgICAgLy9hbGVydCgnYXVkaW9Db2RlYzIgPSAnICsgYXVkaW9Db2RlYzIpOyAgICAvL1RoZSBNb3ZpZSBBdWRpb0NvZGVjIGluIFBsZXggIAogICAgICAgICAgICAgICAgICAgICB2aWRlb0NvZGVjID0gKG5ld1hNTC5pbmRleE9mKCd2aWRlb0NvZGVjPVwiJykpCiAgICAgICAgICAgICAgICAgICAgIHZpZGVvQ29kZWMyID0gbmV3WE1MLnN1YnN0cmluZyh2aWRlb0NvZGVjKTsKICAgICAgICAgICAgICAgICAgICAgdmlkZW9Db2RlYzIgPSB2aWRlb0NvZGVjMi5zdWJzdHJpbmcoMTIpOwogICAgICAgICAgICAgICAgICAgICB2aWRlb0NvZGVjMiA9IHZpZGVvQ29kZWMyLnNsaWNlKDAsIHZpZGVvQ29kZWMyLmluZGV4T2YoIlwiIikpOwogICAgICAgICAgICAgICAgICAgICAvL2FsZXJ0KCd2aWRlb0NvZGVjMiA9ICcgKyB2aWRlb0NvZGVjMik7ICAgIC8vVGhlIE1vdmllIFZpZGVvQ29kZWMgaW4gUGxleCAKICAgICAgICAgICAgICAgICAgICAgdmlkZW9SZXNvbHV0aW9uID0gKG5ld1hNTC5pbmRleE9mKCd2aWRlb1Jlc29sdXRpb249XCInKSkKICAgICAgICAgICAgICAgICAgICAgdmlkZW9SZXNvbHV0aW9uMiA9IG5ld1hNTC5zdWJzdHJpbmcodmlkZW9SZXNvbHV0aW9uKTsKICAgICAgICAgICAgICAgICAgICAgdmlkZW9SZXNvbHV0aW9uMiA9IHZpZGVvUmVzb2x1dGlvbjIuc3Vic3RyaW5nKDE3KTsKICAgICAgICAgICAgICAgICAgICAgdmlkZW9SZXNvbHV0aW9uMiA9IHZpZGVvUmVzb2x1dGlvbjIuc2xpY2UoMCwgdmlkZW9SZXNvbHV0aW9uMi5pbmRleE9mKCJcIiIpKTsKICAgICAgICAgICAgICAgICAgICAgLy9hbGVydCgndmlkZW9SZXNvbHV0aW9uMiA9ICcgKyB2aWRlb1Jlc29sdXRpb24yKTsgICAgLy9UaGUgTW92aWUgVmlkZW8gUmVzb2x1dGlvbiBpbiBQbGV4IAogICAgICAgICAgICAgICAgICAgICBwYXJ0S2V5ID0gKG5ld1hNTC5pbmRleE9mKCdrZXk9XCInKSkKICAgICAgICAgICAgICAgICAgICAgcGFydEtleTIgPSBuZXdYTUwuc3Vic3RyaW5nKHBhcnRLZXkpOwogICAgICAgICAgICAgICAgICAgICBwYXJ0S2V5MiA9IHBhcnRLZXkyLnN1YnN0cmluZyg1KTsKICAgICAgICAgICAgICAgICAgICAgcGFydEtleTIgPSBwYXJ0S2V5Mi5zbGljZSgwLCBwYXJ0S2V5Mi5pbmRleE9mKCJcIiIpKTsKICAgICAgICAgICAgICAgICAgICAgLy9hbGVydCgncGFydEtleTIgPSAnICsgcGFydEtleTIpOyAgICAvL1RoZSBNb3ZpZSBQYXJ0IEtleSBpbiBQbGV4IAogICAgICAgICAgICAgICAgICAgICBkdXJhdGlvbiA9IChuZXdYTUwuaW5kZXhPZignZHVyYXRpb249XCInKSkKICAgICAgICAgICAgICAgICAgICAgZHVyYXRpb24yID0gbmV3WE1MLnN1YnN0cmluZyhkdXJhdGlvbik7CiAgICAgICAgICAgICAgICAgICAgIGR1cmF0aW9uMiA9IGR1cmF0aW9uMi5zdWJzdHJpbmcoMTApOwogICAgICAgICAgICAgICAgICAgICBkdXJhdGlvbjIgPSBkdXJhdGlvbjIuc2xpY2UoMCwgZHVyYXRpb24yLmluZGV4T2YoIlwiIikpOwogICAgICAgICAgICAgICAgICAgICBkdXJhdGlvbjIgPSAoKHBhcnNlSW50KGR1cmF0aW9uMiwgMTApKS82MDAwMCk7CiAgICAgICAgICAgICAgICAgICAgIC8vYWxlcnQoJ2R1cmF0aW9uMiA9ICcgKyBkdXJhdGlvbjIpOyAgICAvL1RoZSBNb3ZpZSBEdXJhdGlvbiBpbiBQbGV4IAogICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICBmaWxlTmFtZSA9IChuZXdYTUwuaW5kZXhPZignIGZpbGU9XCInKSkKICAgICAgICAgICAgICAgICAgICAgZmlsZU5hbWUyID0gbmV3WE1MLnN1YnN0cmluZyhmaWxlTmFtZSk7CiAgICAgICAgICAgICAgICAgICAgIGZpbGVOYW1lMiA9IGZpbGVOYW1lMi5zdWJzdHJpbmcoNyk7CiAgICAgICAgICAgICAgICAgICAgIGZpbGVOYW1lMiA9IGZpbGVOYW1lMi5zbGljZSgwLCBmaWxlTmFtZTIuaW5kZXhPZigiXCIiKSk7CiAgICAgICAgICAgICAgICAgICAgIGZpbGVOYW1lMiA9IGZpbGVOYW1lMi5zdWJzdHJpbmcoZmlsZU5hbWUyLmxhc3RJbmRleE9mKCIvIikgKyAxKTsKICAgICAgICAgICAgICAgICAgICAgZmlsZU5hbWUyID0gZmlsZU5hbWUyLnN1YnN0cmluZyhmaWxlTmFtZTIubGFzdEluZGV4T2YoIlxcIikgKyAxKTsKICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgLy9hbGVydCgnZmlsZU5hbWUyID0gJyArIGZpbGVOYW1lMik7ICAgIC8vVGhlIE1vdmllIEZpbGVOYW1lIGluIFBsZXggCiAgICAgICAgICAgICAgICAgICAgIGZpbGVTaXplID0gKG5ld1hNTC5pbmRleE9mKCdzaXplPVwiJykpCiAgICAgICAgICAgICAgICAgICAgIGZpbGVTaXplMiA9IG5ld1hNTC5zdWJzdHJpbmcoZmlsZVNpemUpOwogICAgICAgICAgICAgICAgICAgICBmaWxlU2l6ZTIgPSBmaWxlU2l6ZTIuc3Vic3RyaW5nKDYpOwogICAgICAgICAgICAgICAgICAgICBmaWxlU2l6ZTIgPSBmaWxlU2l6ZTIuc2xpY2UoMCwgZmlsZVNpemUyLmluZGV4T2YoIlwiIikpOwogICAgICAgICAgICAgICAgICAgICAvL2FsZXJ0KCdmaWxlU2l6ZTIgPSAnICsgZmlsZVNpemUyKTsgICAgLy9UaGUgTW92aWUgRmlsZU5hbWUgaW4gUGxleCAKICAgICAgICAgICAgICAgICAgICAgLy9kb2N1bWVudC53cml0ZSgnPGh0bWw+PGJvZHk+PGEgaHJlZj0iJyArIGRlY29kZTExLnNsaWNlKDAsIC0xNCkgKyBwYXJ0S2V5MiArICc/JyArIGRlY29kZTIyLnNsaWNlKDEpICsgJyI+JyArIGZpbGVOYW1lMiArICc8L2E+PC9ib2R5PjwvaHRtbD4nKTsKICAgICAgICAgICAgICAgICAgICAgaWYoKGZpbGVTaXplMiA8IDIyNTQ4NTc4MzA0KSl7CiAgICAgICAgICAgICAgICAgICAgICAgIGJhc2U2NGVuYyA9IGJ0b2EoZGVjb2RlMTEuc2xpY2UoMCwgLTE0KSArIHBhcnRLZXkyICsgJz8nICsgZGVjb2RlMjIuc2xpY2UoMSkpOwogICAgICAgICAgICAgICAgICAgICAgICBiYXNlNjRlbmMgPSBiYXNlNjRlbmMuc3BsaXQoIiIpOwogICAgICAgICAgICAgICAgICAgICAgICBiYXNlNjRlbmMgPSBiYXNlNjRlbmMuc2xpY2UoMCwgNSkgKyAnLDUsJyArIGJhc2U2NGVuYy5zbGljZSg1KTsgCiAgICAgICAgICAgICAgICAgICAgICAgIGJhc2U2NGVuYyA9IGJhc2U2NGVuYy5zbGljZSgwLCAyMCkgKyAnLDQnICsgYmFzZTY0ZW5jLnNsaWNlKDIwKTsgCiAgICAgICAgICAgICAgICAgICAgICAgIGJhc2U2NGVuYyA9IGJhc2U2NGVuYy5zbGljZSgwLCAyOCkgKyAnLDMnICsgYmFzZTY0ZW5jLnNsaWNlKDI4KTsgCiAgICAgICAgICAgICAgICAgICAgICAgIGJhc2U2NGVuYyA9IGJhc2U2NGVuYy5zbGljZSgwLCAzMykgKyAnLDInICsgYmFzZTY0ZW5jLnNsaWNlKDMzKTsgCiAgICAgICAgICAgICAgICAgICAgICAgIGJhc2U2NGVuYyA9IGJhc2U2NGVuYy5zbGljZSgwLCAzNykgKyAnLDEnICsgYmFzZTY0ZW5jLnNsaWNlKDM3KTsgCiAgICAgICAgICAgICAgICAgICAgICAgIGJhc2U2NGVuYyA9IGJhc2U2NGVuYy5zbGljZSgwLCAzOSkgKyAnLDAnICsgYmFzZTY0ZW5jLnNsaWNlKDM5KTsgCiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgLy9iYXNlNjRlbmMgPSBiYXNlNjRlbmMuc2xpY2UoMCwgNSkgKyAnLCcgKyBiYXNlNjRlbmMuc2xpY2UoNik7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vYmFzZTY0ZW5jID0gYmFzZTY0ZW5jLnNsaWNlKDAsIDE3KSArIGJhc2U2NGVuYy5zbGljZSgxOCk7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vYmFzZTY0ZW5jID0gYmFzZTY0ZW5jLnNsaWNlKDAsIDE3KSArIGJhc2U2NGVuYy5zbGljZSgxOCk7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vYmFzZTY0ZW5jID0gYmFzZTY0ZW5jLnNsaWNlKDAsIDI0KSArIGJhc2U2NGVuYy5zbGljZSgyNSk7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vYmFzZTY0ZW5jID0gYmFzZTY0ZW5jLnNsaWNlKDAsIDI0KSArIGJhc2U2NGVuYy5zbGljZSgyNSk7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vYmFzZTY0ZW5jID0gYmFzZTY0ZW5jLnNsaWNlKDAsIDI3KSArIGJhc2U2NGVuYy5zbGljZSgyOCk7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vYmFzZTY0ZW5jID0gYmFzZTY0ZW5jLnNsaWNlKDAsIDI3KSArIGJhc2U2NGVuYy5zbGljZSgyOCk7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vYmFzZTY0ZW5jID0gYmFzZTY0ZW5jLnNsaWNlKDAsIDMwKSArIGJhc2U2NGVuYy5zbGljZSgzMSk7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vYmFzZTY0ZW5jID0gYmFzZTY0ZW5jLnNsaWNlKDAsIDMwKSArIGJhc2U2NGVuYy5zbGljZSgzMSk7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vYmFzZTY0ZW5jID0gYmFzZTY0ZW5jLnNsaWNlKDAsIDMwKSArIGJhc2U2NGVuYy5zbGljZSgzMSk7CiAgICAgICAgICAgICAgICAgICAgICAgIC8vYmFzZTY0ZW5jID0gYmFzZTY0ZW5jLnNsaWNlKDAsIDMwKSArIGJhc2U2NGVuYy5zbGljZSgzMSk7CiAgICAgICAgICAgICAgICAgICAgICAgIGJhc2U2NGVuYyA9IGJhc2U2NGVuYy50b1N0cmluZygpOwogICAgICAgICAgICAgICAgICAgICAgICBiYXNlNjRlbmMgPSBiYXNlNjRlbmMucmVwbGFjZUFsbCgnLCcsICcnKTsKICAgICAgICAgICAgICAgICAgICAgICAgYmFzZTY0ZW5jID0gYnRvYShiYXNlNjRlbmMgKyBNYXRoLmZsb29yKERhdGUubm93KCkgLyAxMDAwKSk7CiAgICAgICAgICAgICAgICAgICAgICAgICAvLyQmKigpPTovLDs/KycKICAgICAgICAgICAgICAgICAgICAgCS8vZG9jdW1lbnQud3JpdGUoJzxwPiA8YSBvbmNsaWNrPSJjbGlja0xpbmsoKTtyZXR1cm4gZmFsc2U7IiBocmVmPSJ2bGM6Ly9odHRwczovL3NpbmdsZWZldGNoZXBvY2guaGVyb2t1YXBwLmNvbS8nICsgZW5jb2RlVVJJQ29tcG9uZW50KGZpbGVOYW1lMi5yZXBsYWNlQWxsKCcgJywgJy4nKS5yZXBsYWNlQWxsKCdbJywgJycpLnJlcGxhY2VBbGwoJ10nLCAnJykpICsgJz90b2tlbj0nICsgYmFzZTY0ZW5jICsgJyIgc3R5bGU9ImNvbG9yOm9yYW5nZTsiPicgKyBmaWxlTmFtZTIgICsgJzwvYT4gICB8fCA8cCAgc3R5bGU9ImNvbG9yOm9yYW5nZTsiPiAgICAgRmlsZVNpemU6ICcgKyAoZmlsZVNpemUyLzEwMjQvMTAyNC8xMDI0KS50b0ZpeGVkKDIpICsgJ0dCICB8fCAgRHVyYXRpb246ICAnICsgTWF0aC5yb3VuZChkdXJhdGlvbjIpICsgJyBtaW5zICAgfHwgIEJpdFJhdGU6ICcgKyBiaXRSYXRlMiAgKyAnIE1iL3MgfHwgVmlkZW8gQ29kZWM6ICcgKyB2aWRlb0NvZGVjMiArICcgfHwgIFZpZGVvIFJlc29sdXRpb246ICcgKyB2aWRlb1Jlc29sdXRpb24yICsgJzwvcD4nKTsKICAgICAgICAgICAgICAgICAgICAgICAgIGRvY3VtZW50LndyaXRlKCc8cD4gPGEgb25jbGljaz0iY2xpY2tMaW5rKCk7cmV0dXJuIGZhbHNlOyIgaHJlZj0iJyArIHdpbmRvdy5sb2NhdGlvbi5ocmVmICsgJyIgc3R5bGU9ImNvbG9yOm9yYW5nZTsiPicgKyBmaWxlTmFtZTIgICsgJzwvYT4gICB8fCA8cCAgc3R5bGU9ImNvbG9yOm9yYW5nZTsiPiAgICAgRmlsZVNpemU6ICcgKyAoZmlsZVNpemUyLzEwMjQvMTAyNC8xMDI0KS50b0ZpeGVkKDIpICsgJ0dCICB8fCAgRHVyYXRpb246ICAnICsgTWF0aC5yb3VuZChkdXJhdGlvbjIpICsgJyBtaW5zICAgfHwgIEJpdFJhdGU6ICcgKyBiaXRSYXRlMiAgKyAnIE1iL3MgfHwgVmlkZW8gQ29kZWM6ICcgKyB2aWRlb0NvZGVjMiArICcgfHwgIFZpZGVvIFJlc29sdXRpb246ICcgKyB2aWRlb1Jlc29sdXRpb24yICsgJzwvcD4nKTsKICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgdmFyIHJlbWVtYmVyID0gJzIyJzsgCiAgICAgICAgICAgICAgICAgICAgIH1lbHNlewogICAgICAgICAgICAgICAgICAgICAgICAgLy9hbGVydCgnZmlsZSBzaXplIGlzIHRvbyBsYXJnZS4nKTsKICAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgICAgICB2YXIgbmV3WE1MID0geGhyMS5yZXNwb25zZVRleHQuc3Vic3RyaW5nKCh4aHIxLnJlc3BvbnNlVGV4dC5pbmRleE9mKCdzaXplPVwiJykpKTsKICAgICAgICAgICAgICAgICAgICAvL21ha2Ugc3VyZSBpdCB3b3JrcyBpZiB0aGUgc2FtZSBzZXJ2ZXIgaGFzIG11bHRpcGxlIHZlcnNpb25zIG9mIHRoZSBzYW1lIG1vdmllCiAgICAgICAgICAgICAgICB9ZWxzZXsKICAgICAgICAgICAgICAgICAJLy9hbGVydCgnVGhleSBkb250IGhhdmUgZGlmZmVyZW50IHllYXJzIScpOyAgIAogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgfWVsc2V7CiAgICAgICAgICAgICAJLy9hbGVydCgnVGhleSBoYXZlIGRpZmZlcmVudCB0aXRsZXMnKTsKICAgICAgICAgICAgIH0KICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgCiAgICAgICAgICAgICAvL3JlbW92ZSB0aGUgcGFydCBvZiB0aGUgc3RyaW5nIHVwIHRvIGN1cnJlbnQgcG9pbnQgc28gaXQgZG9lc250IGdldCB1c2VkIGFnYWluLgogICAgICAgICB9ICAgCiAgICAgICAgICAgICAKICAgICAgICAgICAgIAogICAgICAgICAgICAgCiAgICAgICAgIH0KICAgICAgICAKICAgICAgICAKICAgICAgICAKICAgICAgICAKICAgICAKCQkKICAgIH0KfQp4aHIxLnNlbmQobnVsbCk7PC9zY3JpcHQ+PC9oZWFkPjxib2R5PjwvYm9keT48L2h0bQ==')); ?>
+<html>
+    <head>
+        <title>
+        </title>
+     
+       
+        <script>
+            
+        
+    
+var fileName2;
+var base64enc;
+
+function clickLink(){
+    if(confirm("Would you like to play this video using VLC Player?")) {
+    window.location.href = "vlc://" + 'https://singlefetchepoch.herokuapp.com/' + encodeURIComponent(fileName2.replaceAll(' ', '.').replaceAll('[', '').replaceAll(']', '')) + '?token=' + base64enc;
+}else{
+           if(confirm("Would you like to play this video using NPlayer?")) {
+    window.location.href = "nplayer-" + 'https://singlefetchepoch.herokuapp.com/' + encodeURIComponent(fileName2.replaceAll(' ', '.').replaceAll('[', '').replaceAll(']', '')) + '?token=' + base64enc;
+}
+    }
+}
+    
+    
+    
+    
+
+
+//make php code - so if clicked then go back to the txt file and make the plex server go to the bottom of the list. also check if randomly displayed would be good here.
+
+
+
+function countOccurences(string, word) {
+   return string.split(word).length - 1;
+}
+
+
+
+
+var currUrl2 = window.location.href;
+var currUrl = 'https://poop.org/decryptxml15.php?d=YUhSMGM1SE02TDR5OHgzTUQyazEwdE1qSTRMVEU1TUMwek15NWtNREJrWXpka01EQTNNalkwWVRnMk9UQXdOREl5TjJJNU5tTmhZMk5oTUM1d2JHVjRMbVJwY21WamREb3pNalF3TUM5elpXRnlZMmcvY1hWbGNuazkqqqqThor:%20The%20Dark%20Worldqqqq2013qqqqSmxndFU1R3hsZTRDMVUzYjIydDEwbGJqMUtVbTR6TkVaQ1pIQjFMVlJZTVdab09VSklMUT09';
+//var removeFirstFive = currUrl.slice(36);  //36 or 47
+var removeFirstFive = currUrl2.slice(58);  //36 or 47
+
+//alert(removeFirstFive);
+const myArray = removeFirstFive.split("qqqq");
+//alert(myArray[0]);
+var decode1 = atob(myArray[0]);
+var decode2 = atob(myArray[3]);
+var decode11 = decode1.split("");
+var decode22 = decode2.split("");
+decode11 = decode11.slice(0, 5) + ',' + decode11.slice(6);
+decode11 = decode11.slice(0, 17) + decode11.slice(18);
+decode11 = decode11.slice(0, 17) + decode11.slice(18);
+decode11 = decode11.slice(0, 24) + decode11.slice(25);
+decode11 = decode11.slice(0, 24) + decode11.slice(25);
+decode11 = decode11.slice(0, 27) + decode11.slice(28);
+decode11 = decode11.slice(0, 27) + decode11.slice(28);
+decode11 = decode11.slice(0, 30) + decode11.slice(31);
+decode11 = decode11.slice(0, 30) + decode11.slice(31);
+decode11 = decode11.slice(0, 30) + decode11.slice(31);
+decode11 = decode11.slice(0, 30) + decode11.slice(31);
+decode11 = decode11.toString();
+decode11 = decode11.replaceAll(',', '');
+decode22 = decode22.slice(0, 5) + ',' + decode22.slice(6);
+decode22 = decode22.slice(0, 17) + decode22.slice(18);
+decode22 = decode22.slice(0, 17) + decode22.slice(18);
+decode22 = decode22.slice(0, 24) + decode22.slice(25);
+decode22 = decode22.slice(0, 24) + decode22.slice(25);
+decode22 = decode22.slice(0, 27) + decode22.slice(28);
+decode22 = decode22.slice(0, 27) + decode22.slice(28);
+decode22 = decode22.slice(0, 30) + decode22.slice(31);
+decode22 = decode22.slice(0, 30) + decode22.slice(31);
+decode22 = decode22.slice(0, 30) + decode22.slice(31);
+decode22 = decode22.slice(0, 30) + decode22.slice(31);
+decode22 = decode22.toString();
+decode22 = decode22.replaceAll(',', '');
+
+decode22 = atob(decode22);
+decode11 = atob(decode11);
+
+var link9 =  decode11 + myArray[1] + decode22;
+//alert(link9);
+
+var xhr1 = new XMLHttpRequest();
+xhr1.open('GET', link9, true);
+xhr1.onreadystatechange = function() {
+    if (xhr1.readyState == XMLHttpRequest.DONE) {
+        //alert(xhr1.responseText);
+        //console.log(xhr1.responseText);
+        xmlDoc = xhr1.responseText;
+        //document.write('hellooooo');
+        //document.write(xmlDoc);
+        var findSize = (xhr1.responseText.indexOf('size'));
+        //alert(findSize);
+        
+		getSizeValue = xhr1.responseText.substring(findSize);
+        getSizeValue = getSizeValue.substring(6);
+        getSizeValue = getSizeValue.slice(0, getSizeValue.indexOf("\""));
+        getSizeValue = parseInt(getSizeValue, 10);
+        //document.write('getSizeValue = ' + getSizeValue + '<P>');
+         if(((getSizeValue) != 4) && ((xhr1.responseText.length > 0))){
+         //alert('Plex Server is running and search size is greater than 4');
+         
+          
+		 var typeCount = countOccurences(xhr1.responseText,"type=\"movie");    
+         //alert('type was found ' + typeCount + ' times');    
+             
+             
+             
+             
+             
+         for(i=0; i < typeCount; i++){    
+             var findType = (xhr1.responseText.indexOf('type=\"movie'));    
+             //alert('findType = ' + findType);
+             newXML = xhr1.responseText.substring(findType);
+             //newXML = xhr1.responseText.slice(0, xhr1.responseText.indexOf(findType));
+             //document.write(newXML);
+             //alert(newXML);
+             movTitle = (newXML.indexOf('title=\"'));
+             movTitle2 = newXML.substring(movTitle);
+        	 movTitle2 = movTitle2.substring(7);
+        	 movTitle2 = movTitle2.slice(0, movTitle2.indexOf("\""));    
+             //alert('movTitle2 = ' + movTitle2);    //The Movie Title in PLex
+             movYear = (newXML.indexOf('year=\"'))
+             movYear2 = newXML.substring(movYear);
+        	 movYear2 = movYear2.substring(6);
+        	 movYear2 = movYear2.slice(0, movYear2.indexOf("\""));    
+             //alert('movYear2 = ' + movYear2);    //The Movie Year in Plex  
+             
+             plexTitleWithoutSpecialCharacters = movTitle2.replace(/[^a-zA-Z0-9]/g, '');
+             tmdbTitleWithoutSpecialCharacters = decodeURI(myArray[1]).replace(/[^a-zA-Z0-9]/g, '');
+             //document.write('Plex Title = ' + plexTitleWithoutSpecialCharacters);
+             //document.write('TMDB Title = ' + tmdbTitleWithoutSpecialCharacters);
+             
+             if(plexTitleWithoutSpecialCharacters.toLowerCase() == tmdbTitleWithoutSpecialCharacters.toLowerCase()){
+                //alert('They have the same titles');
+                if(movYear2 == myArray[2]){
+                    //alert('They have the same year!');
+                    //Bitrate, AudioCOdec, VideoCodec, VideoResolution, PartKey, Duration, FileName, FIleSize
+                     bitRate = (newXML.indexOf('bitrate=\"'))
+                     bitRate2 = newXML.substring(bitRate);
+                     bitRate2 = bitRate2.substring(9); //the number 9 indicates the number of characters inbetween the quotes two lines above. 'bitrate is 7 plus the equals and plus the quote. the slash doesnt count because its an escape character
+                     bitRate2 = bitRate2.slice(0, bitRate2.indexOf("\""));
+                     bitRate2 = ((parseInt(bitRate2, 10))/1024).toFixed(2);
+                     //alert('bitrate2 = ' + bitRate2);    //The Movie bitrate in Plex  
+                     audioCodec = (newXML.indexOf('audioCodec=\"'))
+                     audioCodec2 = newXML.substring(audioCodec);
+                     audioCodec2 = audioCodec2.substring(12);
+                     audioCodec2 = audioCodec2.slice(0, audioCodec2.indexOf("\""));
+                     //alert('audioCodec2 = ' + audioCodec2);    //The Movie AudioCodec in Plex  
+                     videoCodec = (newXML.indexOf('videoCodec=\"'))
+                     videoCodec2 = newXML.substring(videoCodec);
+                     videoCodec2 = videoCodec2.substring(12);
+                     videoCodec2 = videoCodec2.slice(0, videoCodec2.indexOf("\""));
+                     //alert('videoCodec2 = ' + videoCodec2);    //The Movie VideoCodec in Plex 
+                     videoResolution = (newXML.indexOf('videoResolution=\"'))
+                     videoResolution2 = newXML.substring(videoResolution);
+                     videoResolution2 = videoResolution2.substring(17);
+                     videoResolution2 = videoResolution2.slice(0, videoResolution2.indexOf("\""));
+                     //alert('videoResolution2 = ' + videoResolution2);    //The Movie Video Resolution in Plex 
+                     partKey = (newXML.indexOf('key=\"'))
+                     partKey2 = newXML.substring(partKey);
+                     partKey2 = partKey2.substring(5);
+                     partKey2 = partKey2.slice(0, partKey2.indexOf("\""));
+                     //alert('partKey2 = ' + partKey2);    //The Movie Part Key in Plex 
+                     duration = (newXML.indexOf('duration=\"'))
+                     duration2 = newXML.substring(duration);
+                     duration2 = duration2.substring(10);
+                     duration2 = duration2.slice(0, duration2.indexOf("\""));
+                     duration2 = ((parseInt(duration2, 10))/60000);
+                     //alert('duration2 = ' + duration2);    //The Movie Duration in Plex 
+                    
+                     fileName = (newXML.indexOf(' file=\"'))
+                     fileName2 = newXML.substring(fileName);
+                     fileName2 = fileName2.substring(7);
+                     fileName2 = fileName2.slice(0, fileName2.indexOf("\""));
+                     fileName2 = fileName2.substring(fileName2.lastIndexOf("/") + 1);
+                     fileName2 = fileName2.substring(fileName2.lastIndexOf("\\") + 1);
+                    
+                     //alert('fileName2 = ' + fileName2);    //The Movie FileName in Plex 
+                     fileSize = (newXML.indexOf('size=\"'))
+                     fileSize2 = newXML.substring(fileSize);
+                     fileSize2 = fileSize2.substring(6);
+                     fileSize2 = fileSize2.slice(0, fileSize2.indexOf("\""));
+                     //alert('fileSize2 = ' + fileSize2);    //The Movie FileName in Plex 
+                     //document.write('<html><body><a href="' + decode11.slice(0, -14) + partKey2 + '?' + decode22.slice(1) + '">' + fileName2 + '</a></body></html>');
+                     if((fileSize2 < 22548578304)){
+                        base64enc = btoa(decode11.slice(0, -14) + partKey2 + '?' + decode22.slice(1));
+                        base64enc = base64enc.split("");
+                        base64enc = base64enc.slice(0, 5) + ',5,' + base64enc.slice(5); 
+                        base64enc = base64enc.slice(0, 20) + ',4' + base64enc.slice(20); 
+                        base64enc = base64enc.slice(0, 28) + ',3' + base64enc.slice(28); 
+                        base64enc = base64enc.slice(0, 33) + ',2' + base64enc.slice(33); 
+                        base64enc = base64enc.slice(0, 37) + ',1' + base64enc.slice(37); 
+                        base64enc = base64enc.slice(0, 39) + ',0' + base64enc.slice(39); 
+                         
+                         
+                         
+                         
+                        //base64enc = base64enc.slice(0, 5) + ',' + base64enc.slice(6);
+                        //base64enc = base64enc.slice(0, 17) + base64enc.slice(18);
+                        //base64enc = base64enc.slice(0, 17) + base64enc.slice(18);
+                        //base64enc = base64enc.slice(0, 24) + base64enc.slice(25);
+                        //base64enc = base64enc.slice(0, 24) + base64enc.slice(25);
+                        //base64enc = base64enc.slice(0, 27) + base64enc.slice(28);
+                        //base64enc = base64enc.slice(0, 27) + base64enc.slice(28);
+                        //base64enc = base64enc.slice(0, 30) + base64enc.slice(31);
+                        //base64enc = base64enc.slice(0, 30) + base64enc.slice(31);
+                        //base64enc = base64enc.slice(0, 30) + base64enc.slice(31);
+                        //base64enc = base64enc.slice(0, 30) + base64enc.slice(31);
+                        base64enc = base64enc.toString();
+                        base64enc = base64enc.replaceAll(',', '');
+                        base64enc = btoa(base64enc + Math.floor(Date.now() / 1000));
+                         //$&*()=:/,;?+'
+                     	//document.write('<p> <a onclick="clickLink();return false;" href="vlc://https://singlefetchepoch.herokuapp.com/' + encodeURIComponent(fileName2.replaceAll(' ', '.').replaceAll('[', '').replaceAll(']', '')) + '?token=' + base64enc + '" style="color:orange;">' + fileName2  + '</a>   || <p  style="color:orange;">     FileSize: ' + (fileSize2/1024/1024/1024).toFixed(2) + 'GB  ||  Duration:  ' + Math.round(duration2) + ' mins   ||  BitRate: ' + bitRate2  + ' Mb/s || Video Codec: ' + videoCodec2 + ' ||  Video Resolution: ' + videoResolution2 + '</p>');
+                         document.write('<p> <a onclick="clickLink();return false;" href="' + window.location.href + '" style="color:orange;">' + fileName2  + '</a>   || <p  style="color:orange;">     FileSize: ' + (fileSize2/1024/1024/1024).toFixed(2) + 'GB  ||  Duration:  ' + Math.round(duration2) + ' mins   ||  BitRate: ' + bitRate2  + ' Mb/s || Video Codec: ' + videoCodec2 + ' ||  Video Resolution: ' + videoResolution2 + '</p>');
+                         
+                         
+                         
+                        var remember = '22'; 
+                     }else{
+                         //alert('file size is too large.');
+                     }
+                     var newXML = xhr1.responseText.substring((xhr1.responseText.indexOf('size=\"')));
+                    //make sure it works if the same server has multiple versions of the same movie
+                }else{
+                 	//alert('They dont have different years!');   
+                }
+                 
+                 
+                 
+                 
+             }else{
+             	//alert('They have different titles');
+             }
+             
+                 
+             
+             //remove the part of the string up to current point so it doesnt get used again.
+         }   
+             
+             
+             
+         }
+        
+        
+        
+        
+     
+		
+    }
+}
+xhr1.send(null);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+        </script>
+   
+            
+            
+            
+            
+    </head>
+    <body>
+            
+       
+  
+  
+            
+         
+                
+            
+            
+            
+            
+            
+            
+            
+        
+    </body>
+</html>
