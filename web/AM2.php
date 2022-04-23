@@ -2340,7 +2340,7 @@ const PLEX = {
 
    
     // Init the popup sidebar
-    const popupSidebar = `<div id="popup-sidebar"><img src="${imgThumb}" width="200px" height="350px"/><br><button onclick="PLEX.hide_item();" style="position: fixed;"> -BACK-->>></button><br><button onclick="simulateKey(33, "down");" style="position: fixed;"> -PageUP</button><br><button onclick="simulateKey(34, "down");" style="position: fixed;"> -PageDOWN</button></div>`;
+    const popupSidebar = `<div id="popup-sidebar"><img src="${imgThumb}" width="200px" height="350px"/><br><button onclick="PLEX.hide_item();" style="position: fixed;"> -BACK-->>></button><br><button onclick="simulateKey(33);" style="position: fixed;"> -PageUP</button><br><button onclick="simulateKey(34, "pressed");" style="position: fixed;"> -PageDOWN</button></div>`;
 
    
 
