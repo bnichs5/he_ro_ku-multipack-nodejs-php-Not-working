@@ -970,7 +970,39 @@ function pageUP () {
     var simulatedEvent = new KeyboardEvent("keypress", {keyCode: 33, which: 33});
     document.getElementById("yourSearchInput").dispatchEvent(simulatedEvent);
 }
+		
+		
+function simulateKey (keyCode, type, modifiers) {
+	var evtName = (typeof(type) === "string") ? "key" + type : "keydown";	
+	var modifier = (typeof(modifiers) === "object") ? modifier : {};
 
+	var event = document.createEvent("HTMLEvents");
+	event.initEvent(evtName, true, false);
+	event.keyCode = keyCode;
+	
+	for (var iqwer in modifiers) {
+		event[iqwer] = modifiers[iqwer];
+	}
+
+	document.dispatchEvent(event);
+}
+var onKeyEvent = function (event) {
+	var state = "pressed";
+	
+	if (event.type !== "keypress") {
+		state = event.type.replace("key", "");
+	}
+	
+	console.log("Key with keyCode " + event.keyCode + " is " + state);
+};
+
+document.addEventListener("keypress", onKeyEvent, false);
+document.addEventListener("keydown", onKeyEvent, false);
+document.addEventListener("keyup", onKeyEvent, false);
+		
+		
+		
+		
 
 function resizePic(obj) {
     
@@ -2308,7 +2340,7 @@ const PLEX = {
 
    
     // Init the popup sidebar
-    const popupSidebar = `<div id="popup-sidebar"><img src="${imgThumb}" width="200px" height="350px"/><br><button onclick="PLEX.hide_item();" style="position: fixed;"> -BACK-->>></button><br><button onclick="pageUP();" style="position: fixed;"> -PageUP</button><br><button onclick="pageDOWN();" style="position: fixed;"> -PageDOWN</button></div>`;
+    const popupSidebar = `<div id="popup-sidebar"><img src="${imgThumb}" width="200px" height="350px"/><br><button onclick="PLEX.hide_item();" style="position: fixed;"> -BACK-->>></button><br><button onclick="simulateKey(33, "down");" style="position: fixed;"> -PageUP</button><br><button onclick="simulateKey(34, "down");" style="position: fixed;"> -PageDOWN</button></div>`;
 
    
 
