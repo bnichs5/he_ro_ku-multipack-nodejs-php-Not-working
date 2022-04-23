@@ -2748,7 +2748,7 @@ https://github.com/themsk666/Plex-Export-Dark
 						<input placeholder="Search..." type="text" />
 					</section>
      
-     <form id="builder" action="apigetter8-4.php" method="GET">
+     <form id="builder" action="apigetter.php" method="GET">
      <input type="text" name="s" id="first_name" placeholder="Search" class="searchField">
      <!-- <textarea name="s" rows="2" cols="10"></textarea> -->
      <input type="hidden" name ="id" value="<%= request.getParameter("s_param")%> <!-- "> -->
