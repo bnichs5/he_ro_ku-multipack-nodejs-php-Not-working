@@ -78,7 +78,7 @@ decode22 = decode22.replace(/,/g, '');
 
 
 
-let link9 =  'https://plex3.herokuapp.com/cdn/' + decode11 + myArray[1] + decode22;
+let link9 =  decode11 + myArray[1] + decode22;
 
 const request = require('request');
 request(link9, function (error, response, body) {
